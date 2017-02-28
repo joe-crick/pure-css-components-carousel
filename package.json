@@ -1,0 +1,26 @@
+{
+  "name": "purecss-components-carousel",
+  "version": "0.0.1",
+  "description": "A small JS utility for manipulating Pure.CSS Components carousels.",
+  "main": "index.js",
+  "repository": "https://github.com/joe-crick/pure-css-components-carousel",
+  "author": "Joe Crick <jcrick@josephcrick.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:lint": "eslint index.js",
+    "build:uglify": "uglifyjs --compress --mangle --screw-ie8 --source-map -- index.js > index.min.js",
+    "build:test": "node test.js | tap-spec",
+    "build": "npm-run-all build:lint build:test build:uglify"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "mock-browser": "^0.92.12",
+    "npm-run-all": "^4.0.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "uglify-js": "^2.7.5"
+  },
+  "dependencies": {
+    "browser-linked-list": "https://github.com/joe-crick/browser-linked-list.git"
+  }
+}
