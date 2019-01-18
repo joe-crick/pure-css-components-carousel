@@ -13,7 +13,7 @@
     "build": "npm-run-all build:lint build:test build:uglify"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
+    "eslint": "^5.12.1",
     "mock-browser": "^0.92.12",
     "npm-run-all": "^4.0.2",
     "tap-spec": "^4.1.1",
